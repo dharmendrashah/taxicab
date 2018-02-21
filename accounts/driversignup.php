@@ -11,15 +11,22 @@
     include("uploadimg/uploadimg.php");
     ?>
 <script type="text/javascript">
-function driver_data_submit(){var full_name = document.getElementById('full_name').value;
-var phone_no = document.getElementById('phone_no').value;var validity = document.getElementById('validity').value;
-var taxi_no = document.getElementById('taxi_no').value;var emailid = document.getElementById('emailid').value;
+function driver_data_submit(){
+    var full_name = document.getElementById('full_name').value;
+var phone_no = document.getElementById('phone_no').value;
+    var validity = document.getElementById('validity').value;
+var taxi_no = document.getElementById('taxi_no').value;
+    var emailid = document.getElementById('emailid').value;
 var driver_address = document.getElementById('driver_address').value;
-var district = document.getElementById('district').value;var state = document.getElementById('state').value;
-var country = document.getElementById('country').value;var image = document.getElementById('image').value;
+var district = document.getElementById('district').value;
+    var state = document.getElementById('state').value;
+var country = document.getElementById('country').value;
+    var image = document.getElementById('image').value;
 if(full_name == false && phone_no == false && validity == false && taxi_no == false && emailid == false && 
-driver_address == false && district == false && state == false && country == false && image == false) {
-    alert('all the fields are mendatory to fill') return false;}else{return true;}}</script>
+driver_address == false && district == false && state == false && country == false && image == false) 
+{
+    alert('all the fields are mendatory to fill') return false;}else{return true;}
+}</script>
 <form enctype="multipart/form-data" type="multipart/form-data" method="post" action="submit.php"
  onclick="return driver_data_submit()" name="driver_registration">
 <p class="driver_register"> Full Name: </p>
